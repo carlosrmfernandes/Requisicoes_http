@@ -45,6 +45,8 @@ export default class ListaItens extends Component<Props> {
   }
   render() {
     return (
+      <View style={styles.principal}>
+
       <ScrollView>
         <View style={styles.fundo}>
           {this.state.listaitens.map((item)=>{
@@ -54,6 +56,7 @@ export default class ListaItens extends Component<Props> {
           })}
         </View>
         </ScrollView>
+        </View>
     );
   }
 
@@ -61,6 +64,9 @@ export default class ListaItens extends Component<Props> {
 const styles = StyleSheet.create({
 fundo:{
   backgroundColor:'#DDD',
+},
+principal:{
+  marginTop:35,
 }
 
 });
